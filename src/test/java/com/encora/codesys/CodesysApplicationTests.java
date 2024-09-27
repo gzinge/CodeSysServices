@@ -3,10 +3,10 @@ package com.encora.codesys;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//@SpringBootTest
+@SpringBootTest
 class CodesysApplicationTests {
 
-	//@Test
+	@Test
 	void contextLoads() {
 	}
 

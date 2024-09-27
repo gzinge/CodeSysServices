@@ -30,7 +30,7 @@ public class CodesysApplication {
 	@Autowired
 	PasswordEncoder passwordEncoder;
 
-	@PostConstruct
+	//@PostConstruct
 	public void createUser(){
 		userRepository.saveAll(Arrays.asList(
 			new Users("admin",passwordEncoder.encode("admin"),"admin@encora.com"),

@@ -45,6 +45,14 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+test {
+	maxParallelForks = 1
+	testLogging {
+		events "PASSED", "FAILED", "SKIPPED"
+		exceptionFormat "full"
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
@@ -67,4 +75,3 @@ jib {
 		// Example: If your app runs a web server on port 8080
 	}
 }
-he

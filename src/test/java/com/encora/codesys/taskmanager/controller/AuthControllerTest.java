@@ -3,6 +3,7 @@ package com.encora.codesys.taskmanager.controller;
 import com.encora.codesys.taskmanager.entity.AuthRequest;
 import com.encora.codesys.taskmanager.entity.AuthResponse;
 import com.encora.codesys.taskmanager.entity.Users;
+import com.encora.codesys.taskmanager.repository.UserRepository;
 import com.encora.codesys.taskmanager.service.CustomUserDetailsService;
 import com.encora.codesys.taskmanager.util.JWTUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -37,6 +38,9 @@ class AuthControllerTest {
 
     @Mock
     private AuthenticationManager authenticationManager;
+
+    @Mock
+    private UserRepository userRepository;
 
     @Mock
     private CustomUserDetailsService customUserDetailsService;
